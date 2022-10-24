@@ -1,0 +1,21 @@
+.container-fluid {
+    background-color: bisque;
+    margin: 0;
+    padding: 0;
+}
+
+.col-12.col-md-6.col-lg-6 {
+    background-color: blueviolet;
+}
+
+#socials {
+    background-color: chocolate;
+}
+
+#top {
+    background-color: chocolate;
+}
+
+#copy {
+    background-color: orange;
+}
