@@ -1,21 +1,27 @@
-.container-fluid {
-    background-color: bisque;
-    margin: 0;
+/* Imported Google Font: Josefin Sans */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Lato:wght@300&display=swap');
+
+* {
     padding: 0;
+    margin: 0;
+    border: 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
-.col-12.col-md-6.col-lg-6 {
-    background-color: blueviolet;
+nav {
+    width: 100%;
+    height: 100px;
 }
 
-#socials {
-    background-color: chocolate;
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#top {
-    background-color: chocolate;
-}
-
-#copy {
-    background-color: orange;
+nav a .logo-svg {
+    height: 80px;
+    width: 80px;
 }
