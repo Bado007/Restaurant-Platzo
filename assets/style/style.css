@@ -5,9 +5,9 @@
 * {
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    padding: 0 !important;
-    border: 0 !important;
-    margin: 0 !important;
+    padding: 0;
+    border: 0;
+    margin: 0;
 }
 
 body {
@@ -36,6 +36,7 @@ nav ul {
 
 nav ul li {
     font-size: 22px;
+    text-transform: uppercase;
     padding-left: 20px !important;
     padding-right: 20px !important;
 }
@@ -54,10 +55,11 @@ nav ul li a:hover {
 /* Logo */
 
 nav a .logo-svg {
-    height: 90px;
-    width: 90px;
-    border-radius: 2px;
+    height: 100px;
+    width: 100px;
 }
+
+/* Media for Phone & Tablet */
 
 /* Hero image & Overlay */
 
@@ -96,6 +98,7 @@ nav a .logo-svg {
 
 .hero-content-inner h1 {
     font-size: 50px;
+    text-transform: uppercase;
     border-bottom: 15px !important;
     color: #f1f1f1;
 }
@@ -155,17 +158,102 @@ nav a .logo-svg {
     }
 }
 
-/* Remove Bootstrap Default settings => Main Container */
+/* Main Wrapper */
 
-.container-fluid {
-    padding: 0 !important;
-    margin: 0 !important;
-    border: 0 !important;
+.main-wrapper {
+    background-color: aqua;
+}
+
+/* About Wrapper */
+
+.about-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+/* About Row => Content */
+
+.about-row1 {
+    box-sizing: content-box;
+    height: 500px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#about-column {
-    background-color: #9AA6A4;
+.about-row1-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-row1-content h2 {
+    font-size: 50px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+.about-row1-content p {
+    font-size: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+@media(max-width: 540px) {
+    .about-wrapper {
+        width: 100%;
+        height: 500px;
+        transition: all ease-in .2s;
+        flex-direction: column;
+    }
+
+    .about-row1-content h2 {
+        font-size: 30px;
+        width: auto;
+        transition: all ease-in .2s;
+    }
+
+    .about-column-content p {
+        font-size: 15px;
+        padding-left: 50px !important;
+        padding-right: 59px !important;
+        transition: all ease-in .2s;
+    }
+}
+
+@media(max-width: 800px) {
+    .about-wrapper {
+        width: 100%;
+        height: 500px;
+        transition: all ease-in .2s;
+        flex-direction: column;
+    }
+
+    .about-row1-content h2 {
+        font-size: 30px;
+        width: auto;
+        transition: all ease-in .2s;
+    }
+
+    .about-column-content p {
+        font-size: 15px;
+        padding-left: 50px !important;
+        padding-right: 59px !important;
+        transition: all ease-in .2s;
+    }
+}
+
+/* About Row => Image */
+
+.about-row2 {
+    height: 500px;
+    width: 100%;
+    background-color: blue;
 }
