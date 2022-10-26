@@ -161,7 +161,8 @@ nav a .logo-svg {
 /* Main Wrapper */
 
 .main-wrapper {
-    background-color: aqua;
+    width: 100%;
+    height: auto;
 }
 
 /* About Wrapper */
@@ -303,7 +304,7 @@ nav a .logo-svg {
     flex-direction: column;
 }
 
-.open-hours-row1-content h3 {
+.open-hours-row1-content h2 {
     font-size: 50px;
     padding-bottom: 30px;
     text-transform: uppercase;
@@ -334,7 +335,7 @@ nav a .logo-svg {
     background-repeat: no-repeat;
 }
 
-/* Media for small screen => About */
+/* Media for small screen => Open Hours */
 
 
 @media all and (max-width: 540px) {
@@ -359,7 +360,7 @@ nav a .logo-svg {
     }
 }
 
-/* Media for Medium screen => About */
+/* Media for Medium screen => Open Hours */
 
 @media all and (max-width: 770px) {
     .open-hours-wrapper {
@@ -381,4 +382,213 @@ nav a .logo-svg {
         padding-right: 50px;
         transition: all ease-in .2s;
     }
+}
+
+/* Reservation Wrapper */
+
+.reservation-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.reservation-row1 {
+    box-sizing: content-box;
+    height: 500px;
+    width: 100%;
+    background-color: #9AA6A4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reservation-row1-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reservation-row1-content h2 {
+    font-size: 50px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+.reservation-row1-content p {
+    font-size: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Reservations => Image */
+
+.reservation-row2 {
+    height: 500px;
+    width: 100%;
+}
+
+.reservation-img {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background: url(/assets/images/reserve-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Media for small screen => Reservations */
+
+@media all and (max-width: 540px) {
+    .reservation-wrapper {
+        width: 100%;
+        height: 500px;
+        transition: all ease-in .2s;
+        flex-direction: column;
+    }
+
+    .reservation-row1-content h2 {
+        font-size: 30px;
+        width: auto;
+        transition: all ease-in .2s;
+    }
+
+    .reservation-row1-content p {
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transition: all ease-in .2s;
+    }
+}
+
+/* Media for Medium screen => Reservations */
+
+@media all and (max-width: 770px) {
+    .reservation-wrapper {
+        width: 100%;
+        height: 500px;
+        transition: all ease-in .2s;
+        flex-direction: column;
+    }
+
+    .reservation-row1-content h2 {
+        font-size: 30px;
+        width: auto;
+        transition: all ease-in .2s;
+    }
+
+    .reservation-row1-content p {
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transition: all ease-in .2s;
+    }
+}
+
+/* Contact Wrapper */
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Contact Row => Content */
+
+.contact-row1 {
+    box-sizing: content-box;
+    background-color: #334B48;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-row1-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-row1-content h2 {
+    font-size: 50px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+.contact-row1-content p {
+    font-size: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Media for small screen => Contact */
+
+@media all and (max-width: 540px) {
+    .contact-wrapper {
+        width: 100%;
+        height: 500px;
+        transition: all ease-in .2s;
+        flex-direction: column;
+    }
+
+    .contact-row1-content h2 {
+        font-size: 30px;
+        width: auto;
+        transition: all ease-in .2s;
+    }
+
+    .contact-row1-content p {
+        font-size: 15px;
+        padding-left: 50px !important;
+        padding-right: 59px !important;
+        transition: all ease-in .2s;
+    }
+}
+
+/* Media for Medium screen => Contact */
+
+@media all and (max-width: 770px) {
+    .contact-wrapper {
+        width: 100%;
+        height: 500px;
+        transition: all ease-in .2s;
+        flex-direction: column;
+    }
+
+    .contact-row1-content h2 {
+        font-size: 30px;
+        width: auto;
+        transition: all ease-in .2s;
+    }
+
+    .contact-row-content p {
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transition: all ease-in .2s;
+    }
+}
+
+/* Contact Row => Image */
+
+.contact-row2 {
+    height: 500px;
+    width: 100%;
+}
+
+.contact-row2-map iframe {
+    width: 100%;
+    height: 500px;
 }
