@@ -175,6 +175,7 @@ nav a .logo-svg {
 
 .about-row1 {
     box-sizing: content-box;
+    background-color: #9AA6A4;
     height: 500px;
     width: 100%;
     display: flex;
@@ -206,7 +207,10 @@ nav a .logo-svg {
     margin-bottom: 15px;
 }
 
-@media(max-width: 540px) {
+/* Media for small screen => About */
+
+
+@media all and (max-width: 540px) {
     .about-wrapper {
         width: 100%;
         height: 500px;
@@ -228,7 +232,10 @@ nav a .logo-svg {
     }
 }
 
-@media(max-width: 800px) {
+/* Media for Medium screen => About */
+
+
+@media all and (max-width: 770px) {
     .about-wrapper {
         width: 100%;
         height: 500px;
@@ -244,8 +251,8 @@ nav a .logo-svg {
 
     .about-column-content p {
         font-size: 15px;
-        padding-left: 50px !important;
-        padding-right: 59px !important;
+        padding-left: 50px;
+        padding-right: 50px;
         transition: all ease-in .2s;
     }
 }
@@ -255,5 +262,123 @@ nav a .logo-svg {
 .about-row2 {
     height: 500px;
     width: 100%;
-    background-color: blue;
+}
+
+.about-img {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background: url(/assets/images/about-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Open hours Wrapper */
+
+.open-hours-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Open Hours Row => Content */
+
+.open-hours-row1 {
+    box-sizing: content-box;
+    height: 500px;
+    width: 100%;
+    background-color: #334B48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.open-hours-row1-content {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.open-hours-row1-content h3 {
+    font-size: 50px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    color: #f1f1f1;
+}
+
+.open-hours-row1-content p {
+    font-size: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Open Hours Row => Image */
+
+.open-hours-row2 {
+    height: 500px;
+    width: 100%;
+}
+
+.open-hours-img {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    background: url(/assets/images/openhrs-img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Media for small screen => About */
+
+
+@media all and (max-width: 540px) {
+    .open-hours-wrapper {
+        width: 100%;
+        height: 500px;
+        transition: all ease-in .2s;
+        flex-direction: column;
+    }
+
+    .open-hours-row1 h2 {
+        font-size: 30px;
+        width: auto;
+        transition: all ease-in .2s;
+    }
+
+    .open-hours-row1-content p {
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transition: all ease-in .2s;
+    }
+}
+
+/* Media for Medium screen => About */
+
+@media all and (max-width: 770px) {
+    .open-hours-wrapper {
+        width: 100%;
+        height: 500px;
+        transition: all ease-in .2s;
+        flex-direction: column;
+    }
+
+    .open-hours-row1 h2 {
+        font-size: 30px;
+        width: auto;
+        transition: all ease-in .2s;
+    }
+
+    .open-hours-row1-content p {
+        font-size: 15px;
+        padding-left: 50px;
+        padding-right: 50px;
+        transition: all ease-in .2s;
+    }
 }
