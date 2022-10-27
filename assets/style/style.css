@@ -10,6 +10,10 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
 }
@@ -43,7 +47,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #f1f1f1;
 }
 
 /* Nav bar links hover effect */
@@ -131,7 +135,7 @@ nav a .logo-svg {
     border-color: #f1f1f1;
     color: #334B48;
     box-shadow: 0 0 40px #B89BAE;
-    border: 2px solid transparent;
+    border: 2px solid #f1f1f1;
 }
 
 /* Media for small screen => Hero Image & Hero Content */
@@ -176,7 +180,7 @@ nav a .logo-svg {
 
 .about-row1 {
     box-sizing: content-box;
-    background-color: #9AA6A4;
+    background-color: #334B48;
     height: 500px;
     width: 100%;
     display: flex;
@@ -288,7 +292,7 @@ nav a .logo-svg {
     box-sizing: content-box;
     height: 500px;
     width: 100%;
-    background-color: #334B48;
+    background-color: #9AA6A4;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -318,6 +322,33 @@ nav a .logo-svg {
     margin-bottom: 15px;
 }
 
+.open-hours-row1-content ul {
+    list-style: none;
+    text-align: center;
+    letter-spacing: 1.45px;
+    font-size: 22px;
+    padding-bottom: 25px;
+}
+
+.open-hours-row1-content ul li {
+    color: #f1f1f1;
+    padding-bottom: 5px;
+}
+
+.open-hours-row1-content a {
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f1f1f1;
+
+}
+
+.open-hours-row1-content a:hover {
+    color: #83687A;
+    text-decoration: underline;
+}
+
 /* Open Hours Row => Image */
 
 .open-hours-row2 {
@@ -338,7 +369,7 @@ nav a .logo-svg {
 /* Media for small screen => Open Hours */
 
 
-@media all and (max-width: 540px) {
+@media all and (max-width: 700px) {
     .open-hours-wrapper {
         width: 100%;
         height: 500px;
@@ -347,7 +378,7 @@ nav a .logo-svg {
     }
 
     .open-hours-row1 h2 {
-        font-size: 30px;
+        font-size: 25px;
         width: auto;
         transition: all ease-in .2s;
     }
@@ -362,24 +393,29 @@ nav a .logo-svg {
 
 /* Media for Medium screen => Open Hours */
 
-@media all and (max-width: 770px) {
+@media all and (max-width: 920px) {
     .open-hours-wrapper {
         width: 100%;
         height: 500px;
         transition: all ease-in .2s;
-        flex-direction: column;
     }
 
     .open-hours-row1 h2 {
-        font-size: 30px;
-        width: auto;
+        font-size: 25px;
         transition: all ease-in .2s;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .open-hours-row1-content p {
         font-size: 15px;
         padding-left: 50px;
         padding-right: 50px;
+        transition: all ease-in .2s;
+    }
+
+    .open-hours-row1-content li {
+        font-size: 20px;
         transition: all ease-in .2s;
     }
 }
@@ -395,7 +431,7 @@ nav a .logo-svg {
     box-sizing: content-box;
     height: 500px;
     width: 100%;
-    background-color: #9AA6A4;
+    background-color: #334B48;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -424,6 +460,30 @@ nav a .logo-svg {
     text-align: center;
     margin-bottom: 15px;
 }
+
+.reservation-row1-content button {
+    width: 220px;
+    height: 60px;
+    margin-top: 20px !important;
+    border-radius: 30px;
+    font-size: 20px;
+    background-color: #83687A;
+    outline: none;
+    text-transform: uppercase;
+    color: #f1f1f1;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+
+.reservation-row1-content button:hover {
+    background-color: #B89BAE;
+    border-color: #f1f1f1;
+    color: #334B48;
+    box-shadow: 0 0 40px #B89BAE;
+    border: 2px solid #f1f1f1;
+}
+
 
 /* Reservations => Image */
 
@@ -501,7 +561,7 @@ nav a .logo-svg {
 
 .contact-row1 {
     box-sizing: content-box;
-    background-color: #334B48;
+    background-color: #9AA6A4;
     height: 500px;
     width: 100%;
     display: flex;
@@ -532,6 +592,19 @@ nav a .logo-svg {
     text-align: center;
     margin-bottom: 15px;
 }
+
+.contact-row1-content a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #83687A;
+
+}
+
+.contact-row1-content a:hover {
+    color: #83687A;
+    text-decoration: underline;
+}
+
 
 /* Media for small screen => Contact */
 
@@ -591,4 +664,73 @@ nav a .logo-svg {
 .contact-row2-map iframe {
     width: 100%;
     height: 500px;
+}
+
+/* Footer Row => Socials */
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+
+.footer-row1 {
+    box-sizing: content-box;
+    background-color: #1f2e2d;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer Row => Back on top */
+
+
+.footer-row2 {
+    height: 200px;
+    width: 100%;
+    background-color: #1f2e2d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-row2-content p {
+    font-size: 20px;
+    color: #f1f1f1;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer-row2-content i {
+    color: #83687A;
+    padding: 10px;
+}
+
+/* Back on top */
+
+.back-on-top {
+    background: #83687A;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #f1f1f1 !important;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s;
+}
+
+.back-on-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    transition: all .4s;
+    opacity: 1;
 }
